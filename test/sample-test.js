@@ -11,6 +11,6 @@ describe("Simple", function() {
     const contract = await Simple.deploy();
     await contract.deployed();
 
-    assert(await contract.test.call());
+    assert(await contract.callStatic.test());
   });
 });
